@@ -7,17 +7,19 @@
   <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" />
   <link rel="manifest" href="/manifest.json">
   <title>Nominder</title>
-  <style>
-    .ms-2 {
-      margin-left: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
-  <h1>Напоминатель</h1>
-  <button id="permission">Get Permission</button>
-  <button id="btnTest" class="ms-2">Test Notification</button>
+  <div id="app">
+    <h1>Напоминатель</h1>
+    <div class="button-group">
+      <button class="btn" id="permission">Get Permission</button>
+      <button class="btn" id="btnTest" class="ms-2">Test Notification</button>
+    </div>
+
+  </div>
+
   <script src="/js/alert.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
